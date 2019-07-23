@@ -52,6 +52,9 @@ import {MatTreeModule} from '@angular/material/tree';
 import { FormtemplateComponent } from './component/formtemplate/formtemplate.component';
 import { ValidationService } from './services/validation.service';
 import { ControlmessageComponent } from './component/controlmessage/controlmessage.component';
+import { BookListComponent } from './component/book-list/book-list.component';
+import { BookFormComponent } from './component/book-form/book-form.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
@@ -60,7 +63,9 @@ import { ControlmessageComponent } from './component/controlmessage/controlmessa
     HomeComponent,
     NotfoundComponent,
     FormtemplateComponent,
-    ControlmessageComponent
+    ControlmessageComponent,
+    BookListComponent,
+    BookFormComponent
   ],
   imports: [
     BrowserModule,
@@ -111,6 +116,7 @@ import { ControlmessageComponent } from './component/controlmessage/controlmessa
     MatTreeModule,
     PortalModule,
     ScrollingModule,
+    FlexLayoutModule
   ],
   exports: [
     A11yModule,
